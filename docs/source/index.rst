@@ -10,6 +10,8 @@ hexo指南
    :maxdepth: 2
    :caption: Contents:
 
+   hexo安装
+
 
 
 .. Indices and tables

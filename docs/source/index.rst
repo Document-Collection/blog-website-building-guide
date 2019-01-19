@@ -8,13 +8,9 @@ hexo指南
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   初识hexo
-   hexo安装
-   新建网站
-   添加文件RST
-   文件配置RST
+   base
+   advanced
 
 
 参考

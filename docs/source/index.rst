@@ -10,13 +10,18 @@ hexo指南
    :maxdepth: 2
    :caption: Contents:
 
+   初识hexo
    hexo安装
+   新建网站
+   添加文件RST
 
 
+参考
+******
 
-.. Indices and tables
-.. ==================
+* hexo.io_
+* `hexojs/hexo`_
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+.. _hexo.io: https://hexo.io/
+
+.. _`hexojs/hexo`: https://github.com/hexojs/hexo/　

@@ -15,7 +15,7 @@
     description:           // 网站描述
     keywords:              // 网站关键字
     author: John Doe       // 作者
-    language:              // 语言，默认英语en，使用2-lettter ISO-639-1 code命名规则，中文zh
+    language:              // 语言，默认英语。与主题的语言设置有关，默认主题landscape的中文为zh-CN
     timezone:              // 时区
 
     # URL

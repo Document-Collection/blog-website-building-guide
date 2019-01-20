@@ -9,13 +9,51 @@
 
 ## 打开NexT内部数学公式渲染引擎
 
-进入`themes/next/_config.yml`，找到`mathjax`配置
+进入`themes/next/_config.yml`，找到`math`配置
 
     # MathJax Support
     mathjax:
-    enable: false
-    per_page: false
-    cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+        enable: false
+        per_page: false
+        cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+    # 或者
+
+    # Math Equations Render Support
+    math:
+        enable: true
+
+        # Default(true) will load mathjax/katex script on demand
+        # That is it only render those page who has `mathjax: true` in Front Matter.
+        # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
+        per_page: true
+
+        engine: mathjax
+        #engine: katex
+
+        # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
+        mathjax:
+            # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+            cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+            # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
+            #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+
+            # See: https://mhchem.github.io/MathJax-mhchem/
+            #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
+            #mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
+
+        # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) needed to full Katex support.
+        katex:
+            # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+            cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
+            # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
+            #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
+
+            copy_tex:
+            # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+            enable: false
+            copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
+            copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
 
 设置属性`enable`为`true`，即打开数学公式渲染
 
@@ -28,6 +66,8 @@
     ---
 
 ## 打开`hexo`渲染器
+
+进入网站根目录
 
     npm un hexo-renderer-marked --save
     npm i hexo-renderer-pandoc --save # 或者 hexo-renderer-kramed
@@ -45,6 +85,27 @@
 
 启动服务器
 
-    $ hexo clean && hexo s
+    $ hexo clean && hexo server
 
 ![](./imgs/hexo-math.png)
+
+**问题 1：Error: pandoc exited with code 9: pandoc: Unknown extension: smart**
+
+    $ hexo server
+    INFO  Start processing
+    FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
+    Error: pandoc exited with code 9: pandoc: Unknown extension: smart
+
+        at ChildProcess.<anonymous> (/home/zj/Documents/zjzstu.github.com/blogs/node_modules/hexo-renderer-pandoc/index.js:84:20)
+        at ChildProcess.emit (events.js:182:13)
+        at maybeClose (internal/child_process.js:962:16)
+        at Socket.stream.socket.on (internal/child_process.js:381:11)
+        at Socket.emit (events.js:182:13)
+        at Pipe._handle.close (net.js:610:12)
+
+关于新安装的插件pandoc出错，解决方案参考[Hexo配置问题-Pandoc](http://2simple.top/article/Hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98-Pandoc.html)
+
+我安装另一个插件来解决问题
+
+    npm un hexo-renderer-pandoc --save
+    npm i hexo-renderer-kramed --save

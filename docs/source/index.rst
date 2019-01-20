@@ -11,6 +11,7 @@ hexo指南
 
    base
    advanced
+   theme
 
 
 参考

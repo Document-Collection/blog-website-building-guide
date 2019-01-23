@@ -26,6 +26,11 @@
 7. 友情链接
 8. 设置首页不显示全文(只显示预览)
 9. 动态背景
+10. 置顶
+11. tags和categories为空
+12. 添加github图标 参考：[Hexo-NexT配置超炫网页效果](https://www.jianshu.com/p/9f0e90cc32c2	)
+13. 公益404
+14. 搜索栏
 
 第三方服务
 

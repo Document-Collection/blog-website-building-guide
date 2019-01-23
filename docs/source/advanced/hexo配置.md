@@ -15,14 +15,14 @@
     description:           // 网站描述
     keywords:              // 网站关键字
     author: John Doe       // 作者
-    language:              // 语言，默认英语。与主题的语言设置有关，默认主题landscape的中文为zh-CN
+    language:              // 语言，默认英语。与主题的语言设置有关，默认主题landscape的中文为zh-CN，可在themes/主题名/languages文件夹下查找
     timezone:              // 时区
 
     # URL
     ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
     url: http://yoursite.com                        // 网站地址
-    root: /                                         // 网站根路径
-    permalink: :year/:month/:day/:title/            // 生成静态文件保存格式
+    root: /                                         // 网站根路径，比如静态文件保存在docs文件夹内，那么root设置为/docs/
+    permalink: :year/:month/:day/:title/            // 永久链接，生成静态文件下文章的保存路径
     permalink_defaults:
 
     # Directory
@@ -37,7 +37,7 @@
 
     # Writing
     new_post_name: :title.md # File name of new posts              // 新文章的文件名格式
-    default_layout: post                                           // 默认布局
+    default_layout: post                                           // 默认布局方式
     titlecase: false # Transform title into titlecase              // 标题是否大小写
     external_link: true # Open external links in new tab
     filename_case: 0                                               // 文件名转换成小写:1或大写:2
@@ -86,5 +86,5 @@
     ## Docs: https://hexo.io/docs/deployment.html
     deploy:
     type: git                                                    // 远程服务器类型
-    repo: https://github.com/zjZSTU/zjzstu.github.com.git
-    branch: master
+    repo: https://github.com/zjZSTU/zjzstu.github.com.git        // 远程服务器地址
+    branch: master                                               // 分支

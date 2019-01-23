@@ -9,6 +9,7 @@ hexo指南
 .. toctree::
    :maxdepth: 2
 
+   node
    base
    advanced
    theme

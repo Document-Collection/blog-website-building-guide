@@ -8,7 +8,7 @@
     $ hexo new "My New Post"
     INFO  Created: ~/Documents/hexo-guide/website-sample/source/_posts/My-New-Post.md
 
-生成的文件保存在\ ``source/_posts``\ 文件夹下，文件内容如下
+生成的文件保存在\ ``source/_posts``\ 文件夹下，默认文件内容如下
 
 ::
 
@@ -23,7 +23,7 @@
 布局
 ----
 
-``Hexo``\ 指定了\ ``3``\ 种布局：\ ``post``\ 、\ ``page``\ 和\ ``draft``\ ，可在\ ``_config.yml``\ 中修改默认布局
+``Hexo``\ 指定了\ ``3``\ 种布局：\ ``post``\ (文章)、``page``\ (页面)和``draft``\ (草稿)，可在``_config.yml``\ 中修改默认布局
 
 ::
 
@@ -35,7 +35,7 @@
 
     $ hexo new [layout] <title>
 
-不同布局的作用是指定生成文件的存储地址
+不同布局的作用：一是指定生成文件的存储地址：而是指定生成文件使用的脚手架模板
 
 +---------+-------------------------+
 | 布局    | 保存路径                |
@@ -47,10 +47,96 @@
 | page    | 生成source/下的文件夹   |
 +---------+-------------------------+
 
-文件名修改
+脚手架模板
 ----------
 
-生成文件的文件名和\ ``_config.yml``\ 文件中的\ ``new_post_name``\ 属性有关
+``hexo``\ 将不同布局的模板放置在\ ``scaffolds``\ 文件夹下，默认模板如下：
+
+::
+
+    # post.md
+    ---
+    title: {{ title }}
+    date: {{ date }}
+    categories: 
+    tags:
+    ---
+
+    # draft.md
+    ---
+    title: {{ title }}
+    tags:
+    ---
+
+    # page.md
+    ---
+    title: {{ title }}
+    date: {{ date }}
+    ---
+
+默认模板文件中的键是\ `Front-matter <https://hexo.io/docs/front-matter>`__
+
+相对应的值可以指定三个占位符：
+
++----------+----------------+
+| 占位符   | 描述           |
++==========+================+
+| layout   | 布局           |
++----------+----------------+
+| title    | 标题           |
++----------+----------------+
+| date     | 文件创建日期   |
++----------+----------------+
+
+自定义脚手架模板
+~~~~~~~~~~~~~~~~
+
+可以在\ ``scaffolds``\ 文件夹下自定义脚手架模板，比如新建文件\ ``image.md``
+
+::
+
+    ---
+    title: {{ title }}
+    date: {{ date }}
+    layout: {{ layout }}
+    ---
+
+    你好，image
+
+``_config.yml``\ 上的默认布局和文章命名如下：
+
+::
+
+    new_post_name: :title.md # File name of new posts
+    default_layout: post
+
+新建文件
+
+::
+
+    $ hexo new image "ImTest"
+    INFO  Created: ~/Documents/zjzstu.github.com/blogs/source/_posts/ImTest.md
+
+``ImTest.md``\ 内容如下：
+
+::
+
+    ---
+    title: ImTest
+    layout: image
+    date: 2019-01-23 14:00:11
+    ---
+
+    你好，image
+
+生成的文件使用了脚手架中的模板\ ``image.md``\ ，填充了相应的的标题、布局以及创建时间，同时将其放置在默认布局\ ``post``\ 的路径下
+
+文件名
+------
+
+``hexo``\ 默认使用标题作为文件名，其中\ **文章名(\ ``post name``)可以修改**
+
+生成文章的文件名和\ ``_config.yml``\ 文件中的\ ``new_post_name``\ 属性有关
 
 ::
 
@@ -87,16 +173,6 @@
     $ hexo new "Next Post" 
     INFO  Created: ~/Documents/hexo-guide/website-sample/source/_posts/2019-01-18-Next-Post.md
 
-文件内容如下：
-
-::
-
-    ---
-    title: Next Post
-    date: 2019-01-18 19:55:52
-    tags:
-    ---
-
 草稿
 ----
 
@@ -115,10 +191,10 @@
 
     hexo server --draft
 
-移动草稿文件
-~~~~~~~~~~~~
+发布草稿
+~~~~~~~~
 
-将草稿箱\ ``_drafts``\ 下的文件移动到\ ``_posts``\ 文件夹下
+将草稿箱\ ``_drafts``\ 下的文件发布到\ ``_posts``\ 文件夹下
 
 ::
 

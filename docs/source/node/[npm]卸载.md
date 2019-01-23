@@ -1,7 +1,7 @@
 
 # [npm]卸载
 
-*快捷方式：用un替代uninstall*
+*快捷方式：用`un`替代`uninstall`*
 
 ## 本地卸载
 

@@ -7,5 +7,7 @@ Node.JS相关
 
    node/nodeJS安装
    node/npm和cnpm
-   node/[npm]查询-安装-卸载
+   node/[npm]查询
+   node/[npm]安装
+   node/[npm]卸载
 

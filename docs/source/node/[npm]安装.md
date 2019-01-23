@@ -1,51 +1,29 @@
 
-# [npm]查询-安装-卸载
+# [npm]安装
 
-## 查看已安装依赖
+参考：[npm安装卸载命令](https://blog.csdn.net/mezheng/article/details/79650816)
 
-参考：
+*快捷方式：用`i`替代`install`*
 
-[hexo 构建静态文件无法生成 index.html 等文件](https://blog.csdn.net/huihut/article/details/73196343)
+## 本地安装
 
-[node/npm如何查看安装过的模块或包？](https://jingyan.baidu.com/article/9989c746e7f9e9f648ecfe2f.html)
+安装并写入`package.json`的`dependencies`
 
-查看当前项目已安装依赖
+    npm install xxx –save
 
-    $ npm ls --depth 0
-    hexo-site@0.0.0 /home/zj/Documents/zjzstu.github.com/blogs
-    ├── eslint@5.12.1
-    ├── hexo@3.8.0
-    ├── hexo-deployer-git@1.0.0
-    ├── hexo-generator-archive@0.1.5
-    ├── hexo-generator-category@0.1.3
-    ├── hexo-generator-index@0.2.1
-    ├── hexo-generator-tag@0.2.0
-    ├── hexo-renderer-ejs@0.3.1
-    ├── hexo-renderer-kramed@0.1.4
-    ├── hexo-renderer-stylus@0.3.3
-    ├── hexo-server@0.3.3
-    └── mkdirp@0.5.1
+安装并写入`package.json`的`devDependencies`
 
-    npm ERR! missing: mkdirp@0.5.1, required by node-pre-gyp@0.10.3
-    npm ERR! missing: minimist@0.0.8, required by mkdirp@0.5.1
-    npm ERR! missing: minimatch@3.0.4, required by ignore-walk@3.0.1
-    npm ERR! missing: brace-expansion@1.1.11, required by minimatch@3.0.4
-    ...
-    ...
+    npm install xxx –save-dev
 
-查看全局已安装依赖
+安装但不写入`package.json`
 
-    $ npm ls -g --depth 0
-    /home/zj/software/nodejs/node-v10.15.0-linux-x64/lib
-    ├── cnpm@6.0.0
-    ├── hexo-cli@1.1.0
-    └── npm@6.4.1
+    npm install xxx
 
-## 本地安装包
+## 全局安装
 
-    npm install xxx --save
+    npm install -g xxx
 
-**问题：重新安装一遍后仍然存在`err`**
+## 问题：重新安装一遍后仍然存在`err`
 
     npm install minipass yallist save-buffer mkdirp wrappy once minimatch inherits string-width ansi-regex number-is-nan strip-ansi is-fullwidth-code-point code-point-at console-control-strings concat-map balanced-match brace-expansion  --save
     npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules/fsevents):
@@ -132,14 +110,3 @@
     npm ERR! missing: minipass@2.3.5, required by minizlib@1.2.1
 
 `github`提了一个`bug`：[Ubuntu 16.04 Node.js Hexo npm ERR! missing](https://github.com/nodejs/node/issues/25631)
-
-## 全局安装包
-
-    npm install xxx --save
-
-## 卸载包
-
-    # 本地
-    npm uninstall xxx --save
-    # 全局
-    npm uninstall xxx -g

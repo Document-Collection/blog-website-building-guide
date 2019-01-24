@@ -29,12 +29,16 @@
 10. 置顶
 11. tags和categories为空
 12. 添加github图标 参考：[Hexo-NexT配置超炫网页效果](https://www.jianshu.com/p/9f0e90cc32c2	)
-13. 公益404
-14. 搜索栏
+13. 字数统计
+14. 代码高亮
+15. 数学公式
 
 第三方服务
 
-1. 百度统计
 2. 文章阅读次数LeanCloud
 3. 全局搜索Algolia
-4. 
+13. 公益404
+15. 底部评论
+16. 站点地图
+
+永久链接插件hexo-addlink

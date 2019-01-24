@@ -46,24 +46,24 @@
     relative_link: false
     future: true
     highlight:
-    enable: true
-    line_number: true
-    auto_detect: false
-    tab_replace:
+        enable: true                                               // 代码高亮
+        line_number: true                                          // 显示行号
+        auto_detect: true                                          // 自动检测语言
+        tab_replace:
     
     # Home page setting
     # path: Root path for your blogs index page. (default = '')
     # per_page: Posts displayed per page. (0 = disable pagination)
     # order_by: Posts order. (Order by date descending by default)
     index_generator:
-    path: ''
-    per_page: 10
-    order_by: -date
+    path: ''                                                       // 博客根路径
+    per_page: 10                                                   // 每页文章数，0表示禁止分页
+    order_by: -date                                                // 排序
     
     # Category & Tag
-    default_category: uncategorized
-    category_map:
-    tag_map:
+    default_category: uncategorized                                // 默认类别
+    category_map:                                                  // 类别映射
+    tag_map:                                                       // 标签映射
 
     # Date / Time format
     ## Hexo uses Moment.js to parse and display date

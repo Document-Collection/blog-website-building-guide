@@ -11,3 +11,4 @@
    advanced/资源文件
    advanced/类别&标签
    advanced/永久链接RST
+   advanced/404页面

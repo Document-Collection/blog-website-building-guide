@@ -20,7 +20,7 @@
 1. 语言
 2. 外观
 3. 菜单
-4. 侧边栏(社交链接)
+4. 侧边栏(社交链接)、点击返回顶端、显示百分比
 5. 头像
 6. 打赏功能
 7. 友情链接
@@ -30,16 +30,15 @@
 11. tags和categories为空
 12. 添加github图标 参考：[Hexo-NexT配置超炫网页效果](https://www.jianshu.com/p/9f0e90cc32c2	)
 13. 字数统计
-14. 代码高亮
+14. 代码高亮、复制代码块并显示结果
 15. 数学公式
 16. 版权信息 creative_commons
+17. 标签设置tag style
 
 第三方服务
 
 2. 文章阅读次数LeanCloud
 3. 全局搜索Algolia
 13. 公益404
-15. 底部评论
+15. 底部评论 Error: Not Found
 16. 站点地图
-
-永久链接插件hexo-addlink

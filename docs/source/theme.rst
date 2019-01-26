@@ -14,6 +14,6 @@
    theme/[NexT]动态背景
    theme/[NexT]添加github图标
    theme/[NexT]配置MathJax
-   theme/[NexT]代码块设置
+   theme/[NexT]代码块配置
    theme/[NexT]字数统计
    theme/[NexT]版权信息

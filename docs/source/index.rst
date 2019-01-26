@@ -13,6 +13,7 @@ hexo指南
    base
    advanced
    theme
+   third-service
 
 
 参考

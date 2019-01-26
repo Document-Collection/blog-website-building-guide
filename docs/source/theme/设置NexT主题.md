@@ -19,3 +19,40 @@
     $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 
 ![](./imgs/hexo-theme-next.png)
+
+**注意：主题包中也存在一个_config.yml配置文件**
+
+## 语言
+
+设置中文，在工程`_config.yml`文件中修改
+
+    language: zh-CN
+
+`NexT`具体支持哪几种语言可查看
+
+    /themes/next/languages/
+
+## 布局
+
+`NexT`提供了`4`种布局(或称为主题、`scheme`)
+
+    Muse 主题
+    Mist 主题
+    Pisces 主题
+    Gemini 主题
+
+其预览界面可在[hexo-theme-next](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md#%E5%8D%B3%E6%97%B6%E9%A2%84%E8%A7%88)中点击相应网站查看
+
+在主题`_config.yml`文件中修改
+
+    # Schemes
+    # scheme: Muse
+    # scheme: Mist
+    # scheme: Pisces
+    scheme: Gemini
+
+
+
+
+
+

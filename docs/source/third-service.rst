@@ -9,3 +9,4 @@
    third-service/[Gitalk]评论系统
    third-service/[LeanCloud]文章阅读次数
    third-service/站点地图
+   third-service/[不蒜子]访客人数

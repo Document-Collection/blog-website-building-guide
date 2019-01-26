@@ -12,4 +12,8 @@
    theme/[NexT]首页置顶
    theme/[NexT]添加打赏功能
    theme/[NexT]动态背景
+   theme/[NexT]添加github图标
    theme/[NexT]配置MathJax
+   theme/[NexT]代码块设置
+   theme/[NexT]字数统计
+   theme/[NexT]版权信息

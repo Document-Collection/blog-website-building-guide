@@ -51,6 +51,8 @@
 
 ## 标签&类别
 
+参考：[hexo 下的分类和表签无法显示，怎么解决？](https://www.zhihu.com/question/29017171?sort=created)
+
 与`about`选项操作类似，新建页面文件`tags`和`categories`，同时修改其`.md`文件
 
     # tags.md

@@ -5,6 +5,20 @@
 
 **使用`NexT`版本：`v6.7.0`**
 
+## 参考
+
+`NexT`官方实现网站：[Theme for Hexo](https://theme-next.org/)
+
+个人实现网站：[theme-next](http://theme-next.iissnan.com/)
+
+`NexT github`地址：[theme-next/hexo-theme-next](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md)
+
+`NexT`配置博文：
+
+[GitHub+Hexo 搭建个人网站详细教程](https://zhuanlan.zhihu.com/p/26625249)
+
+[Hexo设置主题以及Next主题个性设置](https://www.jianshu.com/p/b20fc983005f)
+
 ## 配置
 
 点击进入`github`链接，下载主题包到`themes`目录下，在`_config.yml`文件中修改主题

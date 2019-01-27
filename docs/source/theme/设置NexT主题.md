@@ -36,6 +36,19 @@
 
 **注意：主题包中也存在一个_config.yml配置文件**
 
+## `git error`
+
+接下来将会在`next`主题包中进行自定义，需要修改相应的内容，但是没有办法加入到版本管理
+
+    $ git add blogs/themes/next/*
+    fatal: Pathspec 'blogs/themes/next/bower.json' is in submodule 'blogs/themes
+
+参考[git workflow常用命令](http://www.cnblogs.com/kidsitcn/p/4450466.html)，取消`next`子模块设置
+
+    $ rm blogs/themes/next/.git
+    $ git rm --cached blogs/themes/next
+    $ git add blogs/themes/next/*
+
 ## 语言
 
 设置中文，在工程`_config.yml`文件中修改

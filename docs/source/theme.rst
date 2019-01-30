@@ -4,7 +4,8 @@
 
 .. toctree::
    :maxdepth: 2
-
+   
+   theme/主题版本管理
    theme/设置NexT主题
    theme/[NexT]菜单栏
    theme/[NexT]侧边栏

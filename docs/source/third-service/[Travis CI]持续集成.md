@@ -64,7 +64,7 @@
 
 文件夹`blogs`内才是`hexo`工程，所以`.travis.yml`文件内容如下：
 
-    dist: xenial # Ubuntu 16.04
+    themes/next/dist: xenial # Ubuntu 16.04
 
     language: node_js
 
@@ -81,19 +81,21 @@
 
     install:
     - cd ./blogs/
+    # - git clone https://github.com/zjZSTU/hexo-theme-next.git themes/next
+    # - git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
+    # - git clone https://github.com/theme-next/theme-next-algolia-instant-search themes/next/source/lib/algolia-instant-search
     - npm install
 
     # Notice: Replace 'YOUR NAME' and 'YOUR EMAIL'
     before_script:
     - git config --global user.name $USER_NAME
     - git config --global user.email $USER_EMAIL
-    # - git clone git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
 
     script:
     - pwd
     - hexo clean
     - hexo generate
-    # - hexo algolia # 用于algolia搜集信息
+    - hexo algolia # 用于algolia搜集信息
 
     after_success:
     - sed -i'' "s~https://github.com/zjZSTU/zjzstu.github.com.git~https://${GITHUB_REPO_TOKEN}@github.com/zjZSTU/zjzstu.github.com.git~" _config.yml

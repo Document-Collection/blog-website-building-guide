@@ -12,3 +12,4 @@
    advanced/类别&标签
    advanced/永久链接RST
    advanced/404页面
+   advanced/部署多个远程托管

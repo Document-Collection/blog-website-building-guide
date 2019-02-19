@@ -12,3 +12,5 @@
    third-service/[不蒜子]文章阅读次数
    third-service/站点地图
    third-service/[Travis CI]持续集成
+   third-service/[腾讯云]部署云服务器
+   third-service/[腾讯云][Travis CI]持续部署到云服务器

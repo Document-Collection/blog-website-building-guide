@@ -31,8 +31,8 @@
 
 `Travis CI`有两个网址，专门针对开源和私有仓库
 
-1. `https://travis-ci.org/` - 面向开源github仓库
-2. `https://travis-ci.com/` - 面向私有github仓库
+1. `https://travis-ci.org/` - 面向开源`github`仓库
+2. `https://travis-ci.com/` - 面向私有`github`仓库
 
 利用`github`账户注册后，选择你要集成的仓库即可
 
@@ -71,6 +71,8 @@
     node_js:
     - "node"
     - "10.15.0"
+
+    cache: npm
 
     branches: 
     only: # 指定分支提交时才会运行travis ci
@@ -139,6 +141,10 @@
 ![](./imgs/travis-variable.png)
 
 *选择框`Display value in bulid log`用于是否在构建日志中显示值*
+
+#### 默认环境变量
+
+参考：[Default Environment Variables](https://docs.travis-ci.com/user/environment-variables#default-environment-variables)
 
 ### Personal access tokens
 

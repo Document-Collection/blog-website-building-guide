@@ -1,7 +1,7 @@
 
 # [腾讯云][Travis CI]持续部署到云服务器
 
-[[腾讯云]部署云服务器](file:///home/zj/Documents/hexo-guide/docs/build/html/third-service/[%E8%85%BE%E8%AE%AF%E4%BA%91]%E9%83%A8%E7%BD%B2%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.html)已实现`hexo`部署到云服务器，下一步利用自动部署工具`Travis CI`
+[[腾讯云]部署云服务器](https://hexo-guide.readthedocs.io/zh_CN/latest/third-service/[%E8%85%BE%E8%AE%AF%E4%BA%91]%E9%83%A8%E7%BD%B2%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8.html)已实现`hexo`部署到云服务器，下一步利用自动部署工具`Travis CI`
 
 实现原理如下：
 

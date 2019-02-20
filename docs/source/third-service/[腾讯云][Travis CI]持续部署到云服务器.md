@@ -179,3 +179,39 @@
     - git push --force ubuntu@132.232.142.219:/home/ubuntu/git/zhujian.tech.git master
     ...
     ...
+
+### `remote: error: denying non-fast-forward refs/heads/master (you should pull first)`
+
+参考：[git – 如何强制将重置推送到远程存储库？](http://www.voidcn.com/article/p-semtiymh-bso.html)
+
+这是由于远程仓库设置了不能快进，修改云服务器仓库配置文件`.git/config`
+
+    $ cat config 
+    [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = true
+        sharedrepository = 1
+    [receive]
+        denyNonFastforwards = true
+    
+将选项`denyNonFastforwards`设置为`false`，既可以执行强制推送操作了，代码也可修改如下
+
+    after_success:
+    ...
+    ...
+    # - git clone ubuntu@132.232.142.219:/home/ubuntu/git/zhujian.tech.git upload_git
+    - mkdir upload_git
+    - cd upload_git
+    - git init
+    # - rm -rf !(.git)
+    - cp -r ../public/* ./
+    - git add .
+    - git commit -m "Update blogs"
+    - git push --force ubuntu@132.232.142.219:/home/ubuntu/git/zhujian.tech.git master
+    ...
+    ...
+
+或者在工程`_config.yml`中的`deploy`小节设置
+
+

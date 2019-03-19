@@ -19,6 +19,10 @@
 
     npm install xxx
 
+安装`package.json`文件中的依赖到本地`node_modules`文件夹
+
+    npm install
+
 ## 全局安装
 
     npm install -g xxx

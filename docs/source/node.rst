@@ -6,6 +6,7 @@ Node.JS相关
    :maxdepth: 2
 
    node/nodeJS安装
+   node/nodeJS初始化
    node/npm和cnpm
    node/[npm]查询
    node/[npm]安装

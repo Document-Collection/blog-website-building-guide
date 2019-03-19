@@ -2,6 +2,10 @@
 
 [![Documentation Status](https://readthedocs.org/projects/hexo-guide/badge/?version=latest)](https://hexo-guide.readthedocs.io/zh_CN/latest/?badge=latest)
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 使用`Hexo`进行网站制作
 
 基于`Hexo`实现的个人网站 - https://www.zhujian.tech

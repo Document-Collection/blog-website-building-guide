@@ -14,6 +14,7 @@ hexo指南
    advanced
    theme
    third-service
+   FAQ
 
 
 参考

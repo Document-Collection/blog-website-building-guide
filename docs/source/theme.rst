@@ -18,3 +18,4 @@
    theme/[NexT]代码块配置
    theme/[NexT]字数统计
    theme/[NexT]版权信息
+   theme/[NexT]调整页面宽度

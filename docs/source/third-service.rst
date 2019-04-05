@@ -15,3 +15,4 @@
    third-service/[腾讯云]部署云服务器
    third-service/[腾讯云][Travis CI]持续部署到云服务器
    third-service/[clipboard.js]代码块复制
+   third-service/[fancybox]图片显示

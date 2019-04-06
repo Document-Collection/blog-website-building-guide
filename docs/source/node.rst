@@ -11,4 +11,5 @@ Node.JS相关
    node/[npm]查询
    node/[npm]安装
    node/[npm]卸载
+   node/[package.json]脚本运行
 

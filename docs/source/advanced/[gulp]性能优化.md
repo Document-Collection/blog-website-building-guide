@@ -160,3 +160,21 @@ AssertionError [ERR_ASSERTION]: Task function must be specified
 一是将`gulp`回滚到`3.9.1`，参考[运行gulp项目报错：AssertionError: Task function must be specified。](https://blog.csdn.net/adley_app/article/details/85285754)
 
 二是修改`gulpfile.js`文件，参考[运行gulp项目报错：AssertionError: Task function must be specified。](https://blog.csdn.net/qq_31975963/article/details/83034450)
+
+## `font-awesome`加载失败
+
+`gulp`压缩完成后，发现图标显示出错，`font-awesome`加载失败
+
+参考[小图标不显示 [check hexo-filter-optimize, and CDN configs maybe]](https://github.com/theme-next/hexo-filter-optimize/issues/10)和[ 添加插件后fontawesome图标失效 #8 ](https://github.com/theme-next/hexo-filter-optimize/issues/8)
+
+有两种解决方案（*我使用第二种*）：
+
+1. 取消`css`压缩
+
+2. 使用`cdn`
+
+修改主题`_config.yml`，添加
+
+```
+fontawesome: https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css
+```

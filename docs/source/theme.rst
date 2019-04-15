@@ -19,3 +19,4 @@
    theme/[NexT]字数统计
    theme/[NexT]版权信息
    theme/[NexT]调整页面宽度
+   theme/[NexT]标签页设置

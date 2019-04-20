@@ -75,6 +75,9 @@
     social:
         Github: https://github.com/zjZSTU || github
         CSDN: https://blog.csdn.net/u012005313 || book
+        Email: mailto:zjzstu@gmail.com || envelope
+
+*邮箱设置参考[请问怎么在侧边栏社交处添加邮箱呢](https://github.com/iissnan/hexo-theme-next/issues/1489)*
 
 ## 友情链接
 

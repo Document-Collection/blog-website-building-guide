@@ -1,0 +1,39 @@
+
+# [NexT]添加备案号
+
+大陆网站上线需要备案，并在网站显示备案号
+
+## ICP备案和公安备案
+
+`ICP`备案和公安备案的区别参考：[企业网站ICP备案 和 网站公安备案的区分](https://baijiahao.baidu.com/s?id=1623541530947349945&wfr=spider&for=pc)
+
+### ICP备案
+
+注册域名并绑定网址后还需要进行服务器备案，我把服务器搭建在腾讯云上，所以在腾讯云上进行`ICP`备案
+
+具体备案流程参考[备案流程](https://cloud.tencent.com/document/product/243/18909)
+
+大约花费了`2`周时间，今天发短信通知说备案成功了，还需要进行公安备案
+
+### 公安备案
+
+登录网址[全国互联网安全管理服务平台](www.beian.gov.cn)
+
+1. 点击联网备案登录，注册个人帐号
+2. 点击新办网站申请，提交相关信息
+
+## 添加备案号
+
+参考：[hexo搭建的静态博客如何添加备案号？](https://www.zhihu.com/question/49931898)
+
+还需要在网站底部添加备案号，`NexT`主题`6.x`版本已支持添加`ICP`备案号
+
+进入主题`_config.yml`文件，搜索`beian`关键字
+
+```
+# Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
+# http://www.miitbeian.gov.cn
+beian:
+    enable: false
+    icp: 
+```

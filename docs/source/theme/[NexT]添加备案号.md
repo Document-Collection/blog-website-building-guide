@@ -24,7 +24,13 @@
 
 ## 添加备案号
 
-参考：[hexo搭建的静态博客如何添加备案号？](https://www.zhihu.com/question/49931898)
+参考：
+
+[hexo搭建的静态博客如何添加备案号？](https://www.zhihu.com/question/49931898)
+
+[Hexo 页脚增加工信部备案和公安网备案展示](https://xian6ge.cn/posts/2da0ce2e/)
+
+[Hexo添加域名备案图案及备案号到页脚](http://shauew.tech/2017/09/23/18.Hexo%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A1%88%E5%8F%8A%E4%BF%A1%E6%81%AF%E5%88%B0%E9%A1%B5%E8%84%9A/)
 
 还需要在网站底部添加备案号，`NexT`主题`6.x`版本已支持添加`ICP`备案号
 
@@ -37,3 +43,46 @@ beian:
     enable: false
     icp: 
 ```
+
+设置`enable`为`true`，同时在`icp`属性上输入备案号即可
+
+目前需要同时添加`ICP`备案号和公安备案号，参考修改如下
+
+进入`themes/next/_config.yml`，添加`gongan`属性
+
+```
+beian:
+    enable: true
+    icp: ICP备案号
+    gongan: 公安备案号
+```
+
+在全国互联网安全管理平台上下载国徽图标，放置在`/themes/next/source/images`下，命名为`beian_logo.png`
+
+进入`themes/next/layout/_partials/footer.swig`，删除以下代码：
+
+```
+{% if theme.footer.beian.enable %}{# 
+  #}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp + ' ') }}{#
+#}{% endif %}
+```
+
+在文件末尾添加如下代码：
+
+```
+{% if theme.footer.beian.enable %}
+  <div>
+    {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp) }}
+
+    <span class="post-meta-divider">|</span>
+  
+    <img src="/images/beian_icon.png" style="display:inline-block;text-decoration:none;height:13px;" />
+    
+    {{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=公安备案号', theme.footer.beian.gongan) }}
+
+  </div>
+
+{% endif %}
+```
+
+*全国互联网安全管理平台上也提供了一段`HTML`代码，用于在网站底部嵌入备案号，不过其样式不符合实际需求，所以修改如上所示*

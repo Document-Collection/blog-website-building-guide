@@ -18,3 +18,4 @@ _config.yml配置
    base/代码块配置
    base/添加github图标
    base/版权信息
+   base/打赏功能

@@ -17,3 +17,4 @@ _config.yml配置
    base/动态背景
    base/代码块配置
    base/添加github图标
+   base/版权信息

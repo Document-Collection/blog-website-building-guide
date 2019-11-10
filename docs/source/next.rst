@@ -9,3 +9,4 @@ NexT主题
    :maxdepth: 2
 
    next/base
+   next/advanced

@@ -14,3 +14,5 @@ NexT配置
    base/首页预览
    base/菜单栏
    base/侧边栏
+   base/动态背景
+   

@@ -1,9 +1,23 @@
 
-# [NexT]添加github图标
+# 添加github图标
 
 参考：[Hexo-NexT配置超炫网页效果](https://www.jianshu.com/p/9f0e90cc32c2)
 
-在首页左上角或右上角添加`github`图标，实现点击图标跳转`github`功能
+在首页右上角显示`github`图标，点击图标跳转`github`主页
+
+## 配置
+
+`NexT`已经集成了这一功能，进入`NexT _config.yml`
+
+```
+# `Follow me on GitHub` banner in the top-right corner.
+github_banner:
+  enable: false
+  permalink: https://github.com/yourname
+  title: Follow me on GitHub
+```
+
+## 自定义
 
 在[GitHub Ribbons](https://github.blog/2008-12-19-github-ribbons/)和[GitHub Corners](http://tholman.com/github-corners/)中选择一款合适的图标，复制其中的代码
 

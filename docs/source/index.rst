@@ -11,3 +11,4 @@
    :maxdepth: 3
 
    hexo
+   next

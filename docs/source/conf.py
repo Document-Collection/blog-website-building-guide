@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'blog-website-building-guide'
+project = '博客网站搭建指南'
 copyright = '2019, zhujian'
 author = 'zhujian'
 

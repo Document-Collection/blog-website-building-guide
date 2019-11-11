@@ -14,3 +14,4 @@ Hexo网站配置
    advanced/永久链接RST
    advanced/代码块设置
    advanced/资源文件
+   advanced/404页面

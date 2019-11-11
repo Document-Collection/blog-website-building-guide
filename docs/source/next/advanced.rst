@@ -14,3 +14,4 @@
    advanced/[GitTalk]评论系统
    advanced/[Algolia]搜索服务
    advanced/[不蒜子]文章阅读次数
+   advanced/[百度统计]网站访问

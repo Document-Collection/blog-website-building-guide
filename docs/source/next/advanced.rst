@@ -9,3 +9,4 @@
    :maxdepth: 2
 
    advanced/添加备案号
+   advanced/首页置顶

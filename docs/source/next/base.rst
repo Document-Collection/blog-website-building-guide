@@ -22,4 +22,3 @@ _config.yml配置
    base/字数统计
    base/配置MathJax
    base/标签页设置
-   base/评论系统

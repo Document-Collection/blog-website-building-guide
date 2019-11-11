@@ -11,3 +11,5 @@
    advanced/添加备案号
    advanced/首页置顶
    advanced/调整页面宽度
+   advanced/评论系统
+   advanced/搜索服务

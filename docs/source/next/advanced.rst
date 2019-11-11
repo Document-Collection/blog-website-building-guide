@@ -11,5 +11,6 @@
    advanced/添加备案号
    advanced/首页置顶
    advanced/调整页面宽度
-   advanced/评论系统
-   advanced/搜索服务
+   advanced/[GitTalk]评论系统
+   advanced/[Algolia]搜索服务
+   advanced/[不蒜子]文章阅读次数

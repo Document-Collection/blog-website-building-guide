@@ -10,3 +10,4 @@
 
    advanced/添加备案号
    advanced/首页置顶
+   advanced/调整页面宽度

@@ -18,3 +18,4 @@
    advanced/[fancybox]图片显示
    advanced/[Baidu][Google]站点地图
    advanced/字体设置
+   advanced/加载进度条

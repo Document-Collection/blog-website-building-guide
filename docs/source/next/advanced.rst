@@ -17,3 +17,4 @@
    advanced/[百度统计]网站访问
    advanced/[fancybox]图片显示
    advanced/[Baidu][Google]站点地图
+   advanced/字体设置

@@ -71,3 +71,29 @@ math:
     $ hexo clean && hexo generate && hexo server
 
 ![](./imgs/hexo-math.png)
+
+## 行内公式渲染不完全
+
+当前我遇到的情况是一行只能渲染一个行内公式，多个公式一起就不成功了
+
+参考[hexo Next主题中支持latex公式(转) ](http://layty.coding.me/2018/09/21/hexo/hexo-Next%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%94%AF%E6%8C%81latex%E5%85%AC%E5%BC%8F/)，渲染插件`hexo-renderer-kramed`针对行内公式渲染有语义冲突，比如对于下划线等符号会转换成`markdown`语法
+
+进入`node_modules/kramed/lib/rules/inline.js`
+
+修改`11`行`escape`变量
+
+```
+// escape: /^\\([\\`*{}\[\]()#$+\-.!_>])/,
+escape: /^\\([`*\[\]()#$+\-.!_>])/,
+```
+
+修改`20`行`em`变量
+
+```
+// em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+```
+
+重新生成即可
+
+**注意：如果使用`CI`进行编译生成，需要在编译之前进行修改，比如文件替换**

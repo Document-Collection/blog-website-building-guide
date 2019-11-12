@@ -20,6 +20,5 @@ _config.yml配置
    base/版权信息
    base/打赏功能
    base/字数统计
-   base/配置MathJax
    base/标签页设置
    base/标签云

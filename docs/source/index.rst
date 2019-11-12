@@ -12,3 +12,4 @@
 
    hexo
    next
+   ci&cd

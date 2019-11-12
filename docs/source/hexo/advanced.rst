@@ -15,3 +15,4 @@ Hexo网站配置
    advanced/代码块设置
    advanced/资源文件
    advanced/404页面
+   advanced/[gulp]性能优化

@@ -22,3 +22,4 @@ _config.yml配置
    base/字数统计
    base/标签页设置
    base/标签云
+   base/RSS支持

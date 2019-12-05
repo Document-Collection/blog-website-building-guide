@@ -23,3 +23,4 @@ _config.yml配置
    base/标签页设置
    base/标签云
    base/RSS支持
+   base/本地搜索服务

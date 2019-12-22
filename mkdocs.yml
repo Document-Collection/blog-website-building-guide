@@ -1,0 +1,94 @@
+# 站点名称
+site_name: 'Blog Website Building Guide'
+# 仓库链接
+repo_url: https://github.com/zjZSTU/blog-website-building-guide.git
+# 作者
+site_author: 'zhujian'
+# 版权信息
+copyright: '2019, zhujian'
+# 源文件目录
+docs_dir: 'docs'
+# 生成静态文件目录
+site_dir: 'site'
+# 额外信息
+extra:
+    # 版本号
+    version: 0.3.0
+# 主题
+theme: 
+    # name: 'readthedocs'
+    # name: 'mkdocs'
+    name: 'material'
+# markdown扩展
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+# 导航
+nav:
+    - Home: index.md
+    - Hexo:
+        - Home: './hexo/index.md'
+        - 'Get Started':
+            - '初始Hexo': './hexo/get-started/初识Hexo.md'
+            - 'Hexo安装': './hexo/get-started/Hexo安装.md'
+            - '新建网站': './hexo/get-started/新建网站.md'
+            - '添加文件': './hexo/get-started/添加文件.md'
+            - '文件配置': './hexo/get-started/文件配置.md'
+            - '本地服务器': './hexo/get-started/本地服务器.md'
+            - '远程服务器': './hexo/get-started/远程服务器.md'
+        - 'Advanced':
+            - 'Hexo命令': './hexo/advanced/Hexo命令.md'
+            - '配置文件_config': './hexo/advanced/配置文件_config.md'
+            - '类别&标签': './hexo/advanced/类别&标签.md'
+            - '永久链接': './hexo/advanced/永久链接.md'
+            - '代码块设置': './hexo/advanced/代码块设置.md'
+            - '资源文件': './hexo/advanced/资源文件.md'
+            - '404页面': './hexo/advanced/404页面.md'
+            - '[gulp]性能优化': './hexo/advanced/[gulp]性能优化.md'
+
+    - NexT:
+        - Home: './next/index.md'
+        - 'Base':
+            - '主题版本管理': './next/base/主题版本管理.md'
+            - '设置NexT主题': './next/base/设置NexT主题.md'
+            - '支持语言': './next/base/支持语言.md'
+            - '布局': './next/base/布局.md'
+            - '首页预览': './next/base/首页预览.md'
+            - '菜单栏': './next/base/菜单栏.md'
+            - '侧边栏': './next/base/侧边栏.md'
+            - '动态背景': './next/base/动态背景.md'
+            - '代码块配置': './next/base/代码块配置.md'
+            - '添加github图标': './next/base/添加github图标.md'
+            - '版权信息': './next/base/版权信息.md'
+            - '打赏功能': './next/base/打赏功能.md'
+            - '字数统计': './next/base/字数统计.md'
+            - '标签页设置': './next/base/标签页设置.md'
+            - '标签云': './next/base/标签云.md'
+            - 'RSS支持': './next/base/RSS支持.md'
+            - '本地搜索服务': './next/base/本地搜索服务.md'
+        - 'Advanced':
+            - '添加备案号': './next/advanced/添加备案号.md'
+            - '首页置顶': './next/advanced/首页置顶.md'
+            - '调整页面宽度': './next/advanced/调整页面宽度.md'
+            - '[GitTalk]评论系统': './next/advanced/[GitTalk]评论系统.md'
+            - '[Algolia]搜索服务': './next/advanced/[Algolia]搜索服务.md'
+            - '[不蒜子]文章阅读次数': './next/advanced/[不蒜子]文章阅读次数.md'
+            - '[百度统计]网站访问': './next/advanced/[百度统计]网站访问.md'
+            - '[fancybox]图片显示': './next/advanced/[fancybox]图片显示.md'
+            - '[Baidu][Google]站点地图': './next/advanced/[Baidu][Google]站点地图.md'
+            - '字体设置': './next/advanced/字体设置.md'
+            - '加载进度条': './next/advanced/加载进度条.md'
+            - '配置MathJax': './next/advanced/配置MathJax.md'
+    
+    - CI&CD:
+        - '引言': './ci&cd/引言.md'
+        - '域名绑定': './ci&cd/域名绑定.md'
+        - '部署多个远程托管': './ci&cd/部署多个远程托管.md'
+        - '[Travis CI]持续集成': './ci&cd/[Travis CI]持续集成.md'
+        - '[腾讯云]部署云服务器': './ci&cd/[腾讯云]部署云服务器.md'
+        - '[腾讯云][Travis CI]持续部署到云服务器': './ci&cd/[腾讯云][Travis CI]持续部署到云服务器.md'
+        - '[Docker][Jenkins][GitLab][Nginx]腾讯云服务器部署': './ci&cd/[Docker][Jenkins][GitLab][Nginx]腾讯云服务器部署.md'

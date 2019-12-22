@@ -9,7 +9,7 @@
 
 [hexo-algolia](https://www.npmjs.com/package/hexo-algolia)
 
-**推荐使用`local_search`服务，参考[Local Search](https://theme-next.org/docs/third-party-services/search-services)**
+**推荐使用`local_search`服务，参考[Local Search](../base/本地搜索服务.md)**
 
 [Algolia](https://www.algolia.com/)是一个支持网站搜索功能的在线服务。`NexT`主题也集成了相应的功能，实现步骤如下：
 

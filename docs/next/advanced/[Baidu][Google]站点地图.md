@@ -22,7 +22,7 @@
 
     # URL
     ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-    url: https://www.zhujian.tech
+    url: https://blog.zhujian.life
     ...
     ...
 
@@ -136,7 +136,7 @@
     Disallow: /vendors/
     Disallow: /fancybox/
 
-    Sitemap: https://www.zhujian.tech/sitemap.xml
-    Sitemap: https://www.zhujian.tech/baidusitemap.xml
+    Sitemap: https://blog.zhujian.life/sitemap.xml
+    Sitemap: https://blog.zhujian.life/baidusitemap.xml
 
 将`Sitemap`属性值替换成自己的地址

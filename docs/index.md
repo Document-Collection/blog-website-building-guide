@@ -9,4 +9,4 @@
 
 相关文档
 
-* [从CSDN到Hexo](https://www.zhujian.tech/posts/359e7c3c.html)
+* [从CSDN到Hexo](https://blog.zhujian.life/posts/359e7c3c.html)

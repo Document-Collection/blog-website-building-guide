@@ -1,4 +1,6 @@
 
+# 此仓库不再维护，有关最新的`HexoV5.4.0+NexTv8.2.2`前往[ ZJDoc/Hexo-NexT](https://github.com/ZJDoc/Hexo-NexT)
+
 # 引言
 
 完整的博客网站搭建指南，包含如下设置：

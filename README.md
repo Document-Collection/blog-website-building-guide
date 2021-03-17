@@ -1,4 +1,6 @@
 
+# 此仓库不再维护，有关最新的`HexoV5.4.0+NexTv8.2.2`前往[ ZJDoc/Hexo-NexT](https://github.com/ZJDoc/Hexo-NexT)
+
 # 博客网站搭建指南
 
 [![Documentation Status](https://readthedocs.org/projects/blog-website-building-guide/badge/?version=latest)](https://blog-website-building-guide.readthedocs.io/zh_CN/latest/?badge=latest) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -11,12 +13,16 @@
 
 ## 内容列表
 
-- [背景](#背景)
-- [安装](#安装)
-- [用法](#用法)
-- [主要维护人员](#主要维护人员)
-- [参与贡献方式](#参与贡献方式)
-- [许可证](#许可证)
+- [此仓库不再维护，有关最新的HexoV5.4.0+NexTv8.2.2前往[]](#此仓库不再维护有关最新的hexov540nextv822前往)
+- [博客网站搭建指南](#博客网站搭建指南)
+  - [内容列表](#内容列表)
+  - [背景](#背景)
+  - [安装](#安装)
+    - [文档工具安装](#文档工具安装)
+  - [用法](#用法)
+  - [主要维护人员](#主要维护人员)
+  - [参与贡献方式](#参与贡献方式)
+  - [许可证](#许可证)
 
 ## 背景
 
